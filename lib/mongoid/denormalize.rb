@@ -1,7 +1,10 @@
 require "mongoid/denormalize/version"
+require "mongoid/denormalize/macros"
 
 module Mongoid
   module Denormalize
-    # Your code goes here...
+    extend ActiveSupport::Concern
+
+    include Macros
   end
 end
